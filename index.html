@@ -36,7 +36,7 @@
 <body>
   <!--#region Header -->
   <header class="header px-5 py-4">
-    <nav class="w-100 flex j-spacebetween">
+    <nav class="navbar w-100 flex j-spacebetween">
       <a href="" id="header-title" class="header-title fs-5">Flock</a>
       <!-- <button class="hamburger pointer fs-5"><i class="fa-solid fa-bars"></i></button> -->
       <ul class="nav-list">
@@ -82,39 +82,54 @@
         </div> -->
       </section>
   
-      <section id="about-us-call" class="v-flex">
-        <div class="flex j-spacebetween a-center">
-          <div class="v-flex v-flex-inverse">
-            <div class="v-flex">
-              <h2>High-quality and Timeless pieces</h2>
-              <p>Details about your content go here.</p>
+      <div class="padded-body v-flex g-8">
+        <section id="about-us-call" class="v-flex">
+          <div class="flex j-spacebetween a-center">
+            <div class="v-flex v-flex-inverse">
+              <div class="v-flex">
+                <h2>High-quality and Timeless pieces</h2>
+                <p>Details about your content go here.</p>
+              </div>
+              <button>About Us</button>
             </div>
-            <button>About Us</button>
+
+            <div class="about-us-call-img-container">
+              <img class="about-us-call-img" src="./img/placeholders/Large Banner Horizontal.png" alt="" srcset="">
+            </div>
+          </div>
+        </section>
+
+        <section id="claims" class="claims-section">
+          <h2 class="sr-only">Claims</h3>
+            
+          <div class="v-flex a-center">
+            <p class="fs-5">37 Countries</p>
+            <p>Visit our stores</p>
+          </div>
+          <div class="v-flex a-center">
+            <p class="fs-5">10k+</p>
+            <p>Happy customers</p>
+          </div>
+          <div class="v-flex a-center">
+            <p class="fs-5">Worldwide Shipping</p>
+            <p>Purchase our furniture from the comfort of your home</p>
           </div>
 
-          <div class="about-us-call-img-container">
-            <img class="about-us-call-img" src="./img/placeholders/Large Banner Horizontal.png" alt="" srcset="">
+        </section>
+
+        <section id="learn-more" class="learn-more-section g-6">
+          <div class="learn-more-img-container">
+            <img class="learn-more-img" src="./img/placeholders/Large Banner Horizontal.png" alt="" srcset="">
           </div>
-        </div>
-      </section>
 
-      <section id="claims" class="claims-section">
-        <h2 class="sr-only">Claims</h3>
-          
-        <div class="v-flex a-center">
-          <p class="fs-5">37 Countries</p>
-          <p>Visit our stores</p>
-        </div>
-        <div class="v-flex a-center">
-          <p class="fs-5">10k+</p>
-          <p>Happy customers</p>
-        </div>
-        <div class="v-flex a-center">
-          <p class="fs-5">Worldwide Shipping</p>
-          <p>Purchase our furniture from the comfort of your home</p>
-        </div>
+          <div class="v-flex j-center g-3">
+            <h2>Built to last and Modern</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, pariatur atque! Itaque accusamus numquam magnam, corrupti tenetur provident alias voluptatibus totam omnis animi. Fugiat nam sed voluptatum nostrum officia officiis?</p>
 
-      </section>
+            <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </section>
+      </div>
     </div>
   </main>
   <!--#endregion Main -->

@@ -53,11 +53,16 @@ body {
   color: var(--clr-dark-grey);
   height: 100vh;
 }
+
+.test {
+  background: red;
+}
 /*#endregion GENERAL DEFAULTS  */
 /* --------------------------------------------------------------------------------- */
 .header {
   /* background-color: var(--clr-light-grey); */
   box-shadow: 1px 1px 4px 0 var(--clr-dark-grey-25);
+  margin-bottom: var(--spacing-2);
 }
 
 .header-title {
@@ -141,12 +146,16 @@ body {
   border-radius: 0 15px 0 0;
 }
 
+.padded-body {
+  padding: var(--spacing-6);
+}
+
 .about-us-call-img-container {
   width: 50%;
   height: 10rem;
-  margin-right: var(--spacing-4);
+  /* margin-right: var(--spacing-4); */
   border-radius: 15px;
-  background: red;
+  /* background: red; */
 }
 
 .about-us-call-img {
@@ -162,6 +171,11 @@ body {
   grid-template-columns: repeat(3, 1fr); 
   gap: var(--spacing-4); 
   text-align: center;/* Optional: Center-aligns the text within each column */
+}
+
+.learn-more-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .pointer-btn-containers > button {
@@ -197,6 +211,10 @@ body {
 
 .j-spacebetween {
   justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
 }
 
 .a-center {
