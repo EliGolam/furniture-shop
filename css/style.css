@@ -157,12 +157,28 @@ body {
   height: 100%;
 }
 
+.claims-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: var(--spacing-4); 
+  text-align: center;/* Optional: Center-aligns the text within each column */
+}
+
 .pointer-btn-containers > button {
   cursor: pointer;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
 }
 
 /*#region FLEX */
