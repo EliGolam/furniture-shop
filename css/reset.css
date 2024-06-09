@@ -53,6 +53,7 @@ button {
   line-height: 1;
   background: transparent;
   -webkit-appearance: none;
+  cursor: pointer;
 }
 
 /* Balance text wrapping on headings */
