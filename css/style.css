@@ -106,11 +106,11 @@ body {
   /* background: red; */
   /* padding: var(--spacing-4); */
   position: relative;
-  background-image: url("../img/placeholders/Large\ Banner\ Horizontal.png");
+  background-image: url("../img/pexels-emrecan-2079246.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: max(50vh, 25rem);
 }
 
 .hero-text {
@@ -199,6 +199,10 @@ body {
   border-radius: 15px;
 }
 
+.learn-more-img {
+  object-position: bottom;
+}
+
 .sales-title {
   text-align: center;
 }
@@ -215,16 +219,18 @@ body {
 
 .product-img-container {
   border-radius: inherit;
+  margin-bottom: var(--spacing-6);
+  height: 20rem;
 }
 
 .closing-section {
   position: relative;
-  background-image: url("../img/placeholders/Large\ Banner\ Horizontal.png");
-  background-position: center;
+  background-image: url("../img/pexels-valeriya-1129413.webp");
+  background-position: right 0 bottom 45%;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 15px;
-  height: 50vh;
+  height: max(50vh, 30rem);
 }
 
 .closing-container {
@@ -267,7 +273,7 @@ details[open] {
 
 .footer-banner {
   display: grid;
-  grid-template-columns: 1.5fr repeat(3, 1fr);
+  grid-template-columns: 2fr repeat(3, 1fr);
   gap: var(--spacing-9);
 }
 
