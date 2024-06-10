@@ -63,8 +63,14 @@
 body {
   font: var(--fw-default) var(--fs-default) var(--ff-default);
   color: var(--clr-dark-grey);
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--clr-3-light);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 .test {
@@ -76,6 +82,14 @@ body {
   /* background-color: var(--clr-light-grey); */
   box-shadow: 1px 1px 4px 0 var(--clr-dark-grey-25);
   margin-bottom: var(--spacing-2);
+}
+
+.company-title {
+  transition: color 250ms ease-in;
+}
+
+.company-title:hover {
+  color: var(--clr-1);
 }
 
 .company-title {
@@ -105,6 +119,30 @@ body {
     text-align: end;
     width: 70%;
     padding: var(--fs-3);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  background: var(--clr-5);
+  position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+  width: 100%;
+  border-radius: 6px;
+  height: 2px;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 250ms ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .hero-section {
@@ -177,6 +215,14 @@ body {
   /* margin-right: var(--spacing-4); */
   border-radius: 15px;
   /* background: red; */
+  transition: transform 200ms,
+    border-radius 500ms;
+}
+
+.about-us-call-img-container:hover {
+  overflow: visible;
+  border-radius: 5px;
+  transform: scale(1.1);
 }
 
 .container-img {
