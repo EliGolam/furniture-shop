@@ -22,7 +22,7 @@
   --fw-default: 400;
   --fs-default: 1rem;
 
-  --fs-1: 0.8rem;
+  --fs-1: 0.9rem;
   --fs-2: 1rem;
   --fs-3: 1.2rem;
   --fs-4: 1.5rem;
@@ -124,7 +124,7 @@ body {
   padding: var(--spacing-2);
   border-radius: 15px 0px 0px 0px;
   width: fit-content;
-  max-width: 15%;
+  max-width: max(15%, 15rem);
 }
 
 .hero-bg-container {
@@ -255,6 +255,18 @@ details[open] {
   background-color: #f1f1f1;
 }
 
+.footer-banner {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: var(--spacing-9);
+}
+
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-6);
+}
+
 .pointer-btn-containers > button {
   cursor: pointer;
 }
@@ -298,6 +310,20 @@ details[open] {
   align-items: center;
 }
 /*#endregion FLEX */
+
+/*#region Alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+/*#endregion Alignment */
 
 /*#region Sizes  */
 .w-60 {
@@ -388,6 +414,41 @@ details[open] {
   padding-right: var(--spacing-5);
 }
 
+.px-6 {
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+.px-7 {
+  padding-left: var(--spacing-7);
+  padding-right: var(--spacing-7);
+}
+
+.px-8 {
+  padding-left: var(--spacing-8);
+  padding-right: var(--spacing-8);
+}
+
+.px-9 {
+  padding-left: var(--spacing-9);
+  padding-right: var(--spacing-9);
+}
+
+.px-10 {
+  padding-left: var(--spacing-10);
+  padding-right: var(--spacing-10);
+}
+
+.px-11 {
+  padding-left: var(--spacing-11);
+  padding-right: var(--spacing-11);
+}
+
+.px-12 {
+  padding-left: var(--spacing-12);
+  padding-right: var(--spacing-12);
+}
+
 .py-1 {
   padding-top: var(--spacing-1);
   padding-bottom: var(--spacing-1);
@@ -411,6 +472,41 @@ details[open] {
 .py-5 {
   padding-top: var(--spacing-5);
   padding-bottom: var(--spacing-5);
+}
+
+.py-6 {
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+.py-7 {
+  padding-left: var(--spacing-7);
+  padding-right: var(--spacing-7);
+}
+
+.py-8 {
+  padding-left: var(--spacing-8);
+  padding-right: var(--spacing-8);
+}
+
+.py-9 {
+  padding-left: var(--spacing-9);
+  padding-right: var(--spacing-9);
+}
+
+.py-10 {
+  padding-left: var(--spacing-10);
+  padding-right: var(--spacing-10);
+}
+
+.py-11 {
+  padding-left: var(--spacing-11);
+  padding-right: var(--spacing-11);
+}
+
+.py-12 {
+  padding-left: var(--spacing-12);
+  padding-right: var(--spacing-12);
 }
 /*#endregion SPACING */
 
