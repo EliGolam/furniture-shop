@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
 /* --------------------------------------------------------------------------------- */
 /*#region GENERAL DEFAULTS  */
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
@@ -22,7 +25,8 @@
   --clr-4-light: rgb(239, 241, 218);
 
   /* FONT */
-  --ff-default: 'Roboto', Helvetica, Arial, sans-serif;
+  --ff-title: 'Merriweather', serif;
+  --ff-default: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
   --fw-default: 400;
   --fs-default: 1rem;
 
@@ -74,9 +78,10 @@ body {
   margin-bottom: var(--spacing-2);
 }
 
-.header-title {
+.company-title {
   text-decoration: none;
   color: inherit;
+  font-family: var(--ff-title);
 }
 
 .nav-list {
@@ -231,6 +236,7 @@ body {
   background-size: cover;
   border-radius: 15px;
   height: max(50vh, 30rem);
+  color: var(--clr-3);
 }
 
 .closing-container {
@@ -242,7 +248,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
-  justify-content: center;
+  justify-content: end;
+  padding: 2rem;
 }
 
 .faq-section h2 {
