@@ -18,7 +18,7 @@
   <!--#endregion MetaTags -->
   
   <!-- Favicon -->
-  <!-- <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon" /> -->
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/reset.css" />
@@ -35,15 +35,21 @@
 </head>
 <body>
   <!--#region Header -->
-  <header class="header px-5 py-4">
+  <header id="header" class="header px-5 py-4">
     <nav class="navbar w-100 flex j-spacebetween">
-      <a href="./index.html" id="header-title" class="company-title fs-5">Flock</a>
+      <div class="flex g-1 a-center">
+        <div class="header-img-container">
+          <img id="header-img container-img" class="header-img" src="./img/logo.png" alt="" srcset="">
+        </div>
+        <a href="./index.html" id="header-title" class="company-title fs-5">Flock</a>
+      </div>
+      
       <!-- <button class="hamburger pointer fs-5"><i class="fa-solid fa-bars"></i></button> -->
       <ul class="nav-list">
         <li><a class="nav-link" href="./about.html">About Us</a></li>
-        <li><a class="nav-link" href="/products">Products</a></li>
-        <li><a class="nav-link" href="/services">Services</a></li>
-        <li><a class="nav-link" href="/contact">Contacts</a></li>
+        <li><a class="nav-link" href="#sales">Products</a></li>
+        <li><a class="nav-link" href="#closing">Services</a></li>
+        <li><a class="nav-link" href="#faq">Contacts</a></li>
       </ul>
 
       <div class="flex g-3 pointer-btn-containers">
@@ -192,6 +198,16 @@
             </div>
           </div>
           <button>Explore more</button>
+        </section>
+
+        <section class="video-container">
+          <iframe id="video" class="video" 
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen></iframe>
         </section>
 
         <section id="closing" class="closing-section">

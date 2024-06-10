@@ -7,7 +7,7 @@
 /* These are some generic design choices for colour schemes, fonts, gutters and gaps */
 :root {
   /* Color Schemes */
-  --clr-1: rgb(212, 163, 115);
+  --clr-1: rgb(202, 149, 96);
   --clr-2: rgb(250, 237, 205);
   --clr-3: rgb(254, 250, 224);
   --clr-4: rgb(233, 237, 201);
@@ -82,6 +82,10 @@ main {
   /* background-color: var(--clr-light-grey); */
   box-shadow: 1px 1px 4px 0 var(--clr-dark-grey-25);
   margin-bottom: var(--spacing-2);
+}
+
+.header-img-container {
+  width: 2rem;
 }
 
 .company-title {
@@ -181,6 +185,12 @@ main {
 .hero-btn-container {
   /* padding: var(--spacing-2);
   width: fit-content; */
+
+  transition: transform 300ms ease-in-out;
+}
+
+.hero-btn-container:hover {
+  transform: scale(1.1);
 }
 
 .hero-btn-container-1 {
@@ -201,6 +211,11 @@ main {
   border: 2px solid var(--clr-1);
   padding: var(--spacing-3);
   border-radius: calc(100vw);
+  transition: transform 200ms ease-in;
+}
+
+.hero-btn:hover {
+  border: 2px solid var(--clr-5);
 }
 
 .padded-body {
@@ -274,6 +289,24 @@ main {
   height: 20rem;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000; /* fallback for transparent iframe */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .closing-section {
   position: relative;
   background-image: url("../img/pexels-valeriya-1129413.webp");
@@ -289,13 +322,14 @@ main {
   position: absolute;
     right: 0;
   
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
   justify-content: end;
   padding: 2rem;
+  max-height: 100%;
 }
 
 .faq-section h2 {
