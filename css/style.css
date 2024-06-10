@@ -277,6 +277,7 @@ details[open] {
   gap: var(--spacing-6);
 }
 
+/*#region Util */
 .pointer-btn-containers > button {
   cursor: pointer;
 }
@@ -331,6 +332,8 @@ details[open] {
   border-top-left-radius: 15px;
   box-shadow: 0 -25px 0 0 var(--clr-3-light);
 }
+/*#endregion Util */
+
 
 /*#region FLEX */
 .flex {
