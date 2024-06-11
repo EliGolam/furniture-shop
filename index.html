@@ -22,7 +22,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/reset.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
   <!-- SCRIPTS -->
   <script src="./scripts/app.js" defer></script>
@@ -49,7 +49,7 @@
         <li><a class="nav-link" href="./about.html">About Us</a></li>
         <li><a class="nav-link" href="#sales">Products</a></li>
         <li><a class="nav-link" href="#closing">Services</a></li>
-        <li><a class="nav-link" href="#faq">Contacts</a></li>
+        <li><a class="nav-link" href="#contact">Contacts</a></li>
       </ul>
 
       <div class="flex g-3 pointer-btn-containers">
@@ -99,7 +99,7 @@
   
       <div class="padded-body v-flex g-8">
         <section id="about-us-call" class="v-flex">
-          <div class="flex j-spacebetween a-center">
+          <div class="cta-container flex j-spacebetween a-center g-3">
             <div class="v-flex v-flex-inverse g-4">
               <div class="v-flex g-2">
                 <h2>High-quality and Timeless pieces</h2>
@@ -241,16 +241,18 @@
           </details>
         </section>
 
-        <section id="form" class="contact-form v-flex g-2">
+        <section id="contact" class="v-flex g-2">
           <h2>Contact Us</h2>
-          <div>
-            <div class="flex">
-              <input class="contact-input contact-field" type="text" type="text" placeholder="Name" />
-              <input class="contact-input contact-field" type="text" type="email" placeholder="Email" />
+          <form id="form" class="contact-form" action="https://www.freecodecamp.com/email-submit">
+            <div>
+              <div class="flex">
+                <input id="name" class="contact-input contact-field" type="text" placeholder="Name" />
+                <input id="email" class="contact-input contact-field" type="email" placeholder="Email" />
+              </div>
+              <textarea id="body" class="contact-body contact-field" name="" id="" rows="10" type="text" placeholder="Message"></textarea>
+              <input id="submit" type="submit" class="contact-field contact-submit pointer" value="Send" />
             </div>
-            <textarea class="contact-body contact-field" name="" id="" rows="10" type="text" placeholder="Message"></textarea>
-            <input type="submit" class="contact-field contact-submit pointer" value="Send" />
-          </div>
+          </form>
         </section>
       </div>
     </div>
