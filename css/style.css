@@ -207,15 +207,18 @@ main {
   border-radius: 0 15px 0 0;
 }
 
-.hero-btn {
+.generic-btn {
+  width: fit-content;
   border: 2px solid var(--clr-1);
   padding: var(--spacing-3);
   border-radius: calc(100vw);
-  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in,
+    background-color 150ms ease-in;
 }
 
-.hero-btn:hover {
+.generic-btn:hover {
   border: 2px solid var(--clr-5);
+  background-color: var(--clr-4);
 }
 
 .padded-body {
@@ -277,16 +280,46 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-4);
+  row-gap: var(--spacing-7);
 }
 
 .product-card {
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
 }
 
 .product-img-container {
   border-radius: inherit;
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-5);
   height: 20rem;
+}
+
+.product-card-btn {
+  position: relative;
+  color: var(--clr-1);
+  width: fit-content;
+}
+
+.product-card-btn::after {
+  content: '';
+  position: absolute;
+    bottom: -0.3rem;
+    left: 0; 
+  width: 100%;
+  border-radius: 6px;
+  height: 2px;
+  background-color: var(--clr-1);
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 250ms ease-out;
+}
+
+.product-card-btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .video-container {
@@ -298,7 +331,7 @@ main {
   background: #000; /* fallback for transparent iframe */
 }
 
-.video-container iframe {
+.video {
   position: absolute;
   top: 0;
   left: 0;
