@@ -372,10 +372,10 @@ main {
 
 details {
   margin-bottom: var(--spacing-2);
-  border: 1px solid #ddd;
+  border: 1px solid var(--clr-5);
   border-radius: 5px;
   padding: var(--spacing-2);
-  background-color: #f9f9f9;
+  background-color: transparent;
 }
 
 summary {
@@ -383,12 +383,32 @@ summary {
   cursor: pointer;
 }
 
-summary::marker {
-  font-size: 1.2em;
+details[open] {
+  background-color: var(--clr-4-light);
 }
 
-details[open] {
-  background-color: #f1f1f1;
+.contact-field {
+  width: 100%;
+  padding: var(--spacing-2) var(--spacing-4);
+  background-color: transparent;
+  outline: none;
+  border: solid 2px var(--clr-4);
+}
+
+.contact-field:hover {
+  border-color: var(--clr-5);
+}
+
+.contact-field:focus {
+  background-color: var(--clr-4-light);
+}
+
+.contact-input{
+  border-bottom: none;
+}
+
+.contact-submit {
+  border-top: none;
 }
 
 .footer-banner {
